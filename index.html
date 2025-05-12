@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vanshu ❤️</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+    <span class="comments">/**</span><br />
+    <span class="space"/><span class="comments">*TO MY GABBU GABBU</span><br />
+    <span class="space"/><span class="comments">*/</span><br />
+    Hey Vanshu ❤️<br />
+    You remember that night...<br />
+    KFC<br />
+    when we first met... <br />
+    <span class="comments">// Just a spark — but I felt it.</span><br />
+    I honestly can't believe ki we met online, and now you are huge part of my day to day life<br />
+    <span class="comments">// Your voice, your faith, your compassion.</span><br />
+    Your kindness pulled me in,<br />
+    Your strength inspired me,<br />
+    And your love? It changed me.<br />
+    Your empathy spoke louder than words ever could.<br />
+    And in your eyes, I found a home— <br />
+    A place where I’m no longer the same. .<br />
+    <br>
+    We’ve shared laughs, long talks, quiet prayers...<br />
+    And even though we’ve had our differences,<br />
+    One thing has always been true —<br />
+    <span class="comments">// I never stopped choosing you.</span><br />
+    <span class="comments">// I'll continue to win your heart again and again</span><br />
+    <br>
+    You’ve taught me what it means to love deeply,<br />
+    To believe fearlessly,<br />
+    And to grow — together.<br />
+    <br>
+    So here I am, writing this with all my heart:<br />
+    I love you, Vanshu. More than words, more than time.<br />
+    <!-- Forever and always.<br /> -->
+    <br>
+    If you want a hug... just touch the heart below 💖<br />
+    <br>
+    <span id="heartspan">
+    <a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+    </span>
+</div>
+
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					VANSHI
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- PRAMEY</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 3, 14);
+together.setHours(0);
+together.setMinutes(49);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 5);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
